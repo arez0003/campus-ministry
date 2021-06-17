@@ -1,0 +1,28 @@
+//hero slider
+new Splide( '.splide' ).mount();
+
+//References slider
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+		perPage    : 1,
+		breakpoints: {
+            500: {
+				perPage: 1,
+			},
+			668: {
+				perPage: 2,
+			},
+        
+            910: {
+				perPage: 3,
+			},
+           1130: {
+				perPage: 4,
+			},
+            1530: {
+				perPage: 5,
+			}
+		}
+	} ).mount();
+} );
+  
