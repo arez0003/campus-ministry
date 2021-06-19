@@ -25,29 +25,74 @@
     <body>
 <!-- header -->
         <header class="home-header">
+<!--hamburger menu-->
                <a id="hamburger-menu" href="#my-menu">
                  <i class="fas fa-4x fa-bars"></i>
                </a>
 <!--nav menu -->
-              <nav class="home-header-menu">
+              <nav id="my-menu">
                   <ul>
-                     <li class="item1">
+                     <li>
                           <a href="index.html">HOME</a>
                      </li>
-                     <li class="item2">
-                          <a href="">ABOUT</a>
+                     <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+                          <div class="dropdown-content">
+                              <a href="html/about.html">WHO WE ARE</a>
+                              <a href="html/leadership.html">OUR LEADERS</a>
+                          </div>
                      </li>
-                     <li class="item3">
-                          <a href="">EVENTS</a>
+                     <li class="menu-items-hidden">
+                          <a href="html/about.html">WHO WE ARE</a>
                      </li>
-                     <li class="item4">
-                          <a href="">GIVE</a>
+                     <li class="menu-items-hidden">
+                          <a href="html/leadership.html">OUR LEADERS</a>
                      </li>
-                     <li class="item5">
-                          <a href="">CONTACT</a>
+                     <li>
+                          <a href="html/events.html">EVENTS</a>
                      </li>
-                  </ul> 
+                     <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">GIVE</a>
+                          <div class="dropdown-content">
+                              <a href="html/donate.html">DONATE</a>
+                              <a href="html/volunteer.html">VOLUNTEER</a>
+                          </div>
+                     </li>
+                      <li class="menu-items-hidden">
+                          <a href="html/donate.html">DONATE</a>
+                     </li>
+                      <li class="menu-items-hidden">
+                          <a href="html/volunteer.html">VOLUNTEER</a>
+                     </li>
+                     <li>
+                          <a href="html/contact.html">CONTACT</a>
+                     </li>
+<!--donate button-->
+                     <li>
+                         <a class="btn-donate-mobile-menu" href="html/donate.html"><i class="far fa-handshake"></i>  DONATE </a>
+                     </li>
+<!--END OF donate button-->
+<!--mobile menu social media -->
+                     <li class="mobile-menu-social-icons">
+                        <a href="https://www.youtube.com/">
+                            <i class="fab fa-youtube"></i></a>
+                     </li>
+                     <li class="mobile-menu-social-icons">
+                        <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram-square"></i></a>
+                     </li>
+                     <li class="mobile-menu-social-icons">
+                        <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i></a>
+                     </li>
+                     <li class="mobile-menu-social-icons">
+                        <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i></a>
+                     </li>
+<!--END OF mobile menu social media-->
+                  </ul>   
               </nav>
+            
 <!--END OF nav menu-->
 <!--header social media-->
               <section class="social-header">
@@ -71,14 +116,15 @@
                  </ul>
                </section>
 <!--END OF header social media-->
-
 <!--donate button-->
-                <button class="btn-donate"><i class="far fa-handshake"></i>   DONATE </button>
-<!--END OF donate button-->
+                 <a class="btn-donate" href="html/donate.html"><i class="far fa-handshake"></i>  DONATE </a>
+<!--END OF donate button--> 
 <!--logo -->
-                    <a href="index.html"><img class="logo-home-white-text" src="img/logo-home-white-text.png" alt="Campus Ministry Logo"></a>
-                    <a href="index.html"><img class="logo-solo-home-page" src="img/logo-solo-home-page.png" alt="Campus Ministry Logo"></a>
-<!--END OF logo-->  
+                <section class="home-page-logo">
+                    <a href="index.html"><img class="logo-landing-page" src="img/logo-home-white-text.png" alt="Campus Ministry Logo"></a>
+                </section>
+<!--END OF logo-->
+        
         </header>
 <!-- END OF header -->
 <!--main  -->
@@ -88,9 +134,6 @@
              <source src="img/campus-video.mp4" type="video/mp4">
            </video>
 <!--END OF background video-->
-<!--home page video logo-->
-            <a href="index.html"><img class="logo-home" src="img/logo-home.png" alt="Campus Ministry Logo"></a>
-<!--END OF home page video logo-->
 <!--Upcoming events section-->
             <section class="upcoming-events-home">
                  <h3>UPCOMING EVENTS</h3>
@@ -106,7 +149,7 @@
                      <section class="grey-box-content">
                          <h1>WHO ARE WE?</h1>
                          <p>Campus Ministry welcomes all students and staff. We offer Christian counselling,prayer, bible study and fellowship.</p>
-                         <button class="learn-more-home-who-we-are-button">Learn More</button>
+                         <a href="html/about.html" class="learn-more-home-who-we-are-button"> Learn More </a>
                      </section>
                  </section>
              </section>
@@ -121,30 +164,28 @@
 <!--END OF get connected section-->
 <!--origins and leaders section-->
            <section class="origins-and-leaders-container">
-                <section class="our-origins-home">        
-                    <img class="our-origins-section-home" src="img/campus-image-3.png" alt="Photo of Algonquin College Campus">
-                    <button class="our-origins-home-button"><a href="">
-                        OUR ORIGINS</a></button>
+                <section class="our-origins-home">
+                    <a href="html/about.html">       
+                    <img class="our-origins-section-home" src="img/campus-image-3.png" alt="Photo of Algonquin College Campus"></a>
+                    <a href="html/about.html" class="our-origins-home-button"> OUR ORIGINS </a>
                 </section>
                 <section class="our-leaders-home">
-                    <img class="our-leaders-section-home" src="img/campus-image-1.jpg" alt="Photo of Algonquin College New Campus">
-                    <button class="our-leaders-home-button"><a href="">
-                        OUR LEADERS</a></button>
+                   <a href="html/leadership.html">
+                    <img class="our-leaders-section-home" src="img/campus-image-1.jpg" alt="Photo of Algonquin College New Campus"></a>
+                    <a href="html/leadership.html" class="our-leaders-home-button"> OUR LEADERS </a>
                 </section>
             </section>
-<!--END OF origins and leaders section-->
+<!--END OF origins and leaders section--><br><br>
            <p class="campus-ministry-bio">Campus Ministry at Algonquin College has been bringing a Christian dimension to college life since 1994. We seek to strengthen and support the Christian community on campus while respecting and engaging people of other faiths and world views.<br><br>
-           Campus Ministry counsellors focus on spiritual and faith issues such as purpose of life, self worth, relationships, values, guilt, death, life crises, God and religion.</p>
+           Campus Ministry counsellors focus on spiritual and faith issues such as purpose of life, self worth, relationships, values, guilt, death, life crises, God and religion.</p><br><br>
 <!--make a difference section-->
           <section class="make-a-difference">
              <img src="img/hand-giving.jpg" alt="Photo of hand reaching out">
              <section class="make-a-difference-item">
                  <h1>MAKE A DIFFERENCE</h1>
                  <h2>We appreciate you for every act of kindness</h2>
-                 <button class="volunteer-make-a-difference-home-button"><a href="">
-                        VOLUNTEER</a></button>
-                 <button class="donate-make-a-difference-home-button"><a href="">
-                        DONATE</a></button>
+                 <a href="html/donate.html" class="donate-make-a-difference-home-button"> DONATE </a>
+                 <a href="html/volunteer.html" class="volunteer-make-a-difference-home-button"> VOLUNTEER </a>
              </section>
           </section>
 <!--END OF make a difference section-->
@@ -181,13 +222,12 @@
                         </ul>
                     </section>
                 </section>    
-          </section>
+          </section><br><br><br>
 <!--END OF our communities section-->
        </main>
 <!-- END OF main-->
 <!--footer-->
        <footer>
-          <div class="footer-outline"></div>
           <div class="footer-container">
 <!--logo footer           -->
               <div class="footer-item1">
@@ -199,19 +239,19 @@
                    <section class="footer-nav">
                       <ul>
                          <li>
-                              <a href="">HOME</a>
+                              <a href="index.html">HOME</a>
                          </li>
                          <li>
-                              <a href="">ABOUT</a>
+                              <a href="html/about.html">ABOUT</a>
                          </li>
                          <li>
-                              <a href="">EVENTS</a>
+                              <a href="html/events.html">EVENTS</a>
                          </li>
                          <li>
-                              <a href="">GIVE</a>
+                              <a href="html/donate.html">GIVE</a>
                          </li>
                          <li>
-                              <a href="">CONTACT</a>
+                              <a href="html/contact.html">CONTACT</a>
                          </li>
                      </ul> 
                   </section>
@@ -242,22 +282,43 @@
               </div>
 <!--END OF footer social media-->                                             
 <!--student testimony-->
-              <div class="footer-item5">
-                   <section class="review">
-                        <blockquote>
-                            “I really enjoyed my experience with them.
-                            i found a good community there and 
-                            definitely recommend it to everyone! ”
-                        </blockquote>
-                   </section>
-               </div>   
+               <aside class="student-testimonials">
+                  <section id="card-slider2" class="splide">
+                    <section class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <section class="review">
+                                    <blockquote>
+                                       "I really admire the community that is established within Campus Ministry. It has created a place where I can come and be myself without judgement as well as feel loved and recognized."
+                                    </blockquote>
+                                </section>       
+                            </li>
+                            <li class="splide__slide">
+                                <section class="review">
+                                    <blockquote>
+                                        "The Alpha program is a great initiative as it provides free food to the people and also teaches them about faith and spirituality. I love it and come here very often."
+                                    </blockquote>
+                                </section>
+                            </li>
+                                <li class="splide__slide">
+                                <section class="review">
+                                    <blockquote>
+                                       "Here feels like home to me. The Chaplain answers my questions patiently. I have experienced spiritual growth and self-development. The Chaplain is open-minded and welcoming to everyone no matter what background they have."
+                                    </blockquote>
+                                </section>
+                            </li>
+                        </ul>
+                    </section>
+                </section>     
+              </aside>
+              
 <!--END OF student testimony-->
                <div class="footer-item4">
                     <p><strong>Address: </strong>
                     Room E211 1385 Woodroffe<br>
                     Ave Ottawa, ON K2G1V8
                     <br><strong>Telephone: </strong>6137274723 X5341<br>
-                   <strong>E-mail: </strong>Campusministryac@Gmail.Com</p>
+                   <strong>E-mail: </strong>campusministryac@gmail.Com</p>
                 </div>
             </div>
 
@@ -299,6 +360,15 @@
         <script> 
            document.addEventListener( 'DOMContentLoaded', function () {
                 new Splide( '#card-slider', {
+                    
+                } ).mount();
+            } );
+            
+                
+        </script>
+        <script> 
+           document.addEventListener( 'DOMContentLoaded', function () {
+                new Splide( '#card-slider2', {
                     
                 } ).mount();
             } );
